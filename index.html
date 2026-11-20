@@ -251,11 +251,6 @@ window.addEventListener('message',event=>{const frame=document.getElementById('u
  closeButton.addEventListener('click',close);
  document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
  window.addEventListener('message',e=>{if(e.source===viewer.contentWindow && e.data?.type==='VITA_PORTFOLIO_CLOSE_PREVIEW')close()});
- for(const anchor of document.querySelectorAll('a.work-action[href]')){
-   let key=anchor.getAttribute('href');
-   if(!Object.hasOwn(pageData,key))continue;
-   anchor.addEventListener('click',ev=>{ev.preventDefault();previousFocus=anchor;title.textContent=key.includes('media-player')?'VITA MEDIA PLAYER':key.includes('photo-resizer')?'VITA PHOTO RESIZE':'ELEVENLABS REDESIGN';overlay.hidden=false;document.body.style.overflow='hidden';viewer.src=pageData[key];closeButton.focus()});
- }
  universe.src='universe.html';
 })();
 </script></body></html>

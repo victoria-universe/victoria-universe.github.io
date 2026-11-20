@@ -218,8 +218,13 @@ body::before{background:radial-gradient(ellipse 53% 38% at 53% 61%,rgba(190,85,3
 .site-header .brand-tagline{position:absolute;left:0;bottom:0;display:block;font-family:var(--textfont);font-size:10px;font-weight:500;line-height:1;letter-spacing:.11em;color:#c5c6c3;white-space:nowrap;text-transform:uppercase}
 @media(max-width:580px){.site-header .brand-tagline{font-size:8px;letter-spacing:.1em}.site-header .brand{padding-bottom:13px}}
 </style>
-</head>
-<body>
+<style id="portfolio-return-navigation">
+.portfolio-return{position:fixed;left:18px;bottom:18px;z-index:20;display:inline-flex;align-items:center;gap:9px;max-width:calc(100vw - 36px);padding:12px 18px;border:1px solid rgba(229,213,238,.48);border-radius:999px;background:rgba(15,12,22,.94);box-shadow:0 12px 38px rgba(0,0,0,.57);color:#f8f3fc;font:700 11px/1.3 'Segoe UI',Arial,sans-serif;letter-spacing:.12em;text-decoration:none;backdrop-filter:blur(12px);transition:background .2s,border-color .2s}
+.portfolio-return:hover,.portfolio-return:focus-visible{background:#31233b;border-color:#eadcf7;outline-offset:3px}
+@media(max-width:580px){.portfolio-return{left:12px;bottom:12px;padding:11px 13px;font-size:10px;letter-spacing:.08em}}
+
+</style></head>
+<body><a class="portfolio-return" href="index.html#portfolio" aria-label="Back to Victoria Universe portfolio">← BACK TO PORTFOLIO</a>
 <header class="site-header">
  <a class="brand" href="#top" aria-label="ElevenLabs home concept"><span class="brand-bars" aria-hidden="true"><i></i><i></i></span><span class="brand-name">ElevenLabs</span><span class="brand-tagline">DIVE INTO THE FUTURE</span></a>
  <nav class="header-right" aria-label="Primary navigation"><span class="concept-stamp">INDEPENDENT PRODUCT DESIGN</span><button class="nav-link" id="aboutBtn" type="button">About concept</button><button class="menu-cta" id="toolsBtn" type="button">Explore tools ↗</button></nav>
